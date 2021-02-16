@@ -128,6 +128,8 @@ main {
 .contact-title h2 {
 	text-align: center;
 	font-size: 1.8em;
+	background-color: #ebedef;
+	padding: 20px 0px;
 }
 
 
@@ -270,11 +272,20 @@ main {
 
 /*-------------------CONTACTO-------------------*/
 
+
+
 .contacto {
 	width: 100%;
-	padding: 20px 10% 20px 10%;
+	padding: 40px 10% 40px 10%;
 	background-color: #ebedef;
-	margin-top: 40px;
+	
+	display: flex;
+	align-items: center;
+}
+
+.mapa {
+	width: 100%;
+	margin: 0px 20px;
 }
 
 
@@ -297,6 +308,14 @@ footer p {
 @media screen and (max-width: 1060px) {
 	nav {
 		padding: 20px 5% 20px 5%;
+	}
+
+	.contacto {
+		flex-direction: column;
+	}
+
+	.mapa {
+		margin: 20px 0px;
 	}
 }
 
