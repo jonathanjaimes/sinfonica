@@ -288,6 +288,12 @@ main {
 	margin: 0px 20px;
 }
 
+.mapa p {
+	text-align: center;
+	margin-top: 20px;
+	line-height: 1.5;
+}
+
 
 /*-------------------FOOTER-----------------------*/
 
