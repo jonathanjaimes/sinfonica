@@ -101,14 +101,32 @@ main {
 	padding: 20px 0px;
 }
 
-.programas-title, .historia-title, .galeria-title {
+.programas-title, .historia-title{
 	padding: 60px 0px;
 }
 
-.programas-title, .historia-title, .galeria-title h2 {
+/*-------------------titulos---------------*/
+
+.programas-title h2{
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.8em;
+
 }
+
+ .historia-title h2 {
+	text-align: center;
+	font-size: 1.8em;
+
+}
+
+.galeria-tit h2 {
+	text-align: center;
+	font-size: 1.8em;
+}
+
+
+/*---------------------------------------------*/
+
 
 .programas-Primero-a {
 	display: flex; 
@@ -196,19 +214,6 @@ main {
 	max-width: 1000px;
 }
 
-/*--------------------------------Galeria-----------------------*/
-
-.galeria {
-	width: 100%;
-	padding: 20px 10% 20px 10%;
-	background-color: red;
-}
-
-.galeria-cont {
-	width: 100%;
-	background-color: pink;
-}
-
 .sub {
 	width: 100%;
 	padding: 20px 0px;
@@ -222,6 +227,38 @@ main {
 	text-decoration: none;
 }
 
+/*--------------------------------Galeria-----------------------*/
+
+.galeria {
+	width: 100%;
+	padding: 50px 10% 20px 10%;
+	/*background-color: red;*/
+}
+
+.galeria-cont {
+	width: 100%;
+	/*background-color: pink;*/
+	margin-top: 30px;
+
+}
+
+
+
+.galeria-cont ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+.galeria-cont ul li {
+	list-style: none;
+}
+
+.galeria-cont ul li img {
+	margin: 10px;
+}
 
 
 
