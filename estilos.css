@@ -83,6 +83,7 @@ nav {
 .links a {
 	text-decoration: none;
 	margin-left: 20px;
+	color: black;
 	
 }
 
@@ -145,7 +146,34 @@ main {
 	line-height: 1.5;
 }
 
+.green {
+	color: #75af3f;
+}
+
+.blue {
+	color: #4054b2;
+}
+
+.orange {
+	color: #e55252;
+}
+
+.bluesea {
+	color: #00909e;
+}
+
+.purp {
+	color: #a03899;
+}
+
 /*------------------------Historia-------------------*/
+
+.historia {
+	background-color: #ebedef;
+	
+	padding: 20px 10% 20px 10%;
+
+}
 
 .historia p {
 	line-height: 1.8;
@@ -172,7 +200,7 @@ main {
 
 .galeria {
 	width: 100%;
-	padding: 20px 0% 20px 0%;
+	padding: 20px 10% 20px 10%;
 	background-color: red;
 }
 
