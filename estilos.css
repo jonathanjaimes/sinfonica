@@ -1,0 +1,305 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/*-----------------INFO TOP------------------------*/
+
+.preTop {
+	width: 100%;
+	padding: 5px 10% 10px 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: ;
+}
+
+.preTop-contInfo {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.preTop-contInfo > p {
+	line-height: 1.5;
+}
+
+.preTop-social {
+	width: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.preTop-social > p {
+	font-size: 2em;
+}
+
+
+/*---------------------hamb------------------------*/
+
+.top {
+	width: 100%;
+	padding: 10px 10% 10px 10%;
+	display: none;
+	background-color: #59afd0;
+}
+
+.top label {
+	font-size: 2em;
+	color: white;
+	cursor: pointer;
+}
+
+#btn-menu {
+	display: none;
+}
+
+
+
+/*--------------------NAV BAR-----------------------*/
+
+nav > img {
+	width: 300px;
+}
+
+nav {
+	width: 100%;
+	padding: 20px 10% 20px 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.links a {
+	text-decoration: none;
+	margin-left: 20px;
+	
+}
+
+
+/*--------------------MAIN-----------------------------*/
+
+main {
+	width: 100%;
+	padding: 20px 10% 20px 10%;
+	/*background-color: green;*/
+}
+
+.inicio {
+	background-color: red;
+	padding: 20px 0px;
+}
+
+.programas-title, .historia-title, .galeria-title {
+	padding: 60px 0px;
+}
+
+.programas-title, .historia-title, .galeria-title h2 {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.programas-Primero-a {
+	display: flex; 
+	align-items: center;
+	padding: 20px 0px;
+	/*background-color: pink;*/
+	margin: 10px 0px;
+}
+
+.programas-Primero-a > img {
+	width: 40%;
+	margin-right: 20px;
+}
+
+.programas-Primero-b {
+	display: flex; 
+	align-items: center;
+	padding: 20px 0px;
+	/*background-color: pink;*/
+	margin: 10px 0px;
+}
+
+.programas-Primero-b > img {
+	width: 40%;
+	margin-left: 20px;
+}
+
+.texto p {
+	line-height: 1.8;
+}
+
+.texto ul {
+	margin: 20px 0px;
+	margin-left: 30px;
+	line-height: 1.5;
+}
+
+/*------------------------Historia-------------------*/
+
+.historia p {
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+
+.image1, .image2 {
+	width: 40%;
+}
+
+.image1 {
+	float: left;
+	margin-right: 20px;
+	max-width: 1000px;
+}
+
+.image2 {
+	float: right;
+	margin-left: 20px;
+	max-width: 1000px;
+}
+
+/*--------------------------------Galeria-----------------------*/
+
+.galeria {
+	width: 100%;
+	padding: 20px 0% 20px 0%;
+	background-color: red;
+}
+
+.galeria-cont {
+	width: 100%;
+	background-color: pink;
+}
+
+.sub {
+	width: 100%;
+	padding: 20px 0px;
+}
+
+.sub h3 {
+	text-align: center;
+}
+
+.sub h3 a {
+	text-decoration: none;
+}
+
+
+
+
+
+/*----------------------MEDIA------------------------*/
+
+@media screen and (max-width: 1060px) {
+	nav {
+		padding: 20px 5% 20px 5%;
+	}
+}
+
+
+
+
+@media screen and (max-width: 944px) {
+	nav {
+		flex-direction: column-reverse;
+	}
+
+	.links {
+		display: flex;
+		flex-direction: column;
+		background-color: #59afd0;
+		padding: 20px;
+		width: 100%;
+		margin-left: -200%;
+		position: absolute;
+		top: 2px;
+		transition: all 500ms ease;
+	}
+
+	.links a {
+		margin-bottom: 30px;
+		color: white;
+	}
+
+	.links a:last-child {
+		margin-bottom: 0;
+	}
+
+	.top {
+		display: block;
+	}
+
+	#btn-menu:checked ~ .links {
+		margin: 0;
+	}
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+	.preTop {
+		flex-direction: column;
+		padding: 10px 5% 10px 5%;
+	}
+
+	.preTop-contInfo {
+		width: 100%;
+
+	}
+
+	.preTop-contInfo p {
+		overflow-wrap: anywhere;
+	}
+
+	
+
+	.preTop-social {
+		margin-top: 20px;
+		width: 50%;
+	}
+
+	.programas-Primero-a {
+		flex-direction: column;
+	}
+
+	.programas-Primero-a > img {
+		margin-bottom: 20px;
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.programas-Primero-b {
+		flex-direction: column-reverse;
+	}
+
+	.programas-Primero-b > img {
+		margin-bottom: 20px;
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.image1, .image2 {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+}
+
+
+@media screen and (max-width: 345px) {
+	nav > img {
+		width: 100%;
+	}
+}
