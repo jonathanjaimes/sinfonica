@@ -356,6 +356,14 @@ input[type=number]::-webkit-outer-spin-button {
 margin: 0;
 }
 
+
+
+.notifCorrecto {
+	font-weight: bold;
+	color: black;
+	font-size: 2em;
+}
+
 /*-------------------FOOTER-----------------------*/
 
 footer {

@@ -36,12 +36,19 @@ if(isset($_POST['submit'])){
 
 
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    
+    <title>Orquesta Sinfónica Juvenil de Cúcuta</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="font/icofont.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h5 class="notifCorrecto"> <?= $result; ?></h5>
+
+  
+                <h1 class="notifCorrecto"> <?= $result; ?></h5>
+          
+
 </body>
 </html>
