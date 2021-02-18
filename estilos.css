@@ -44,6 +44,11 @@ html {
 	font-size: 2em;
 }
 
+.preTop-social > p a {
+	text-decoration: none;
+	color: black;
+}
+
 
 /*---------------------hamb------------------------*/
 
@@ -100,6 +105,7 @@ main {
 .inicio {
 	background-color: red;
 	padding: 20px 0px;
+	display: none;
 }
 
 .programas-title, .historia-title{
@@ -129,7 +135,9 @@ main {
 	text-align: center;
 	font-size: 1.8em;
 	background-color: #ebedef;
-	padding: 20px 0px;
+	padding-top: 80px;
+	padding-bottom: 20px;
+	margin-top: 50px;
 }
 
 
@@ -265,10 +273,13 @@ main {
 
 .galeria-cont ul li {
 	list-style: none;
+	display: inline-block;
+	width: 300px;
 }
 
 .galeria-cont ul li img {
 	margin: 10px;
+	width: 100%;
 }
 
 /*-------------------CONTACTO-------------------*/
@@ -282,6 +293,7 @@ main {
 	
 	display: flex;
 	align-items: center;
+
 }
 
 .mapa {
@@ -358,11 +370,63 @@ margin: 0;
 
 
 
-.notifCorrecto {
-	font-weight: bold;
-	color: black;
-	font-size: 2em;
+
+/*-------------------MODAL-------------------------*/
+
+
+.modal-galeria1 {
+	display: none;
 }
+
+.modal-galeria1:target {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-y: scroll;
+
+
+}
+
+.carta {
+	width: 80%;
+	/*background-color: red;*/
+	display: flex;
+	align-items: center;
+	background-color: white;
+
+}
+
+.carta img {
+	width: 100%;
+	min-width: 400px;
+
+}
+
+.textoCarta {
+	background-color: white;
+	padding: 40px;
+}
+
+.textoCarta h2 {
+	
+} 
+
+.textoCarta p {
+	margin-top: 5px;
+	line-height: 2;
+}
+
+.cerr a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
 
 /*-------------------FOOTER-----------------------*/
 
@@ -429,6 +493,24 @@ footer p {
 
 	#btn-menu:checked ~ .links {
 		margin: 0;
+	}
+
+	.carta {
+		flex-direction: column;
+	}
+
+	.carta img {
+	width: 100%;
+	min-width: auto;
+
+	}
+
+	.textoCarta h2 {
+		font-size: 1em;
+	} 
+
+	.textoCarta p {
+	font-size: 0.8em;
 	}
 }
 
